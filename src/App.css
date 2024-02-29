@@ -28,6 +28,30 @@
   color: #61dafb;
 }
 
+.sahil {
+  background-color: #FFFFFF; /* Dark background color */
+}
+.navbar-brand {
+  color: white; /* Text color for the brand */
+}
+.footer {
+  background-color: #f0f0f0;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.back-button,
+.submit-button {
+  margin-left: 10px; /* Add margin between buttons */
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
