@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../App.css";
+import { Footer } from "./Footer";
 
 
 export default function Front() {
@@ -132,7 +133,7 @@ export default function Front() {
        
         
       </div>
-
+            <Footer></Footer>
      </div>
               </>
   );

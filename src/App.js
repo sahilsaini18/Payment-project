@@ -1,41 +1,26 @@
-import React from 'react'
-import Front from './component/Front'
-import { Footer } from './component/Footer'
+import React from "react";
+import Front from "./component/Front";
+import { Footer } from "./component/Footer";
+import { BrowserRouter, Routes, Route} from "react-router-dom";
+import Payment from "./component/Payment";
 
 
 const App = () => {
   return (
-  <>
-  <Front/>
-  <Footer/>
+    <>
+      
+      <BrowserRouter>
+      <Routes>
 
-  {/* first Creating Payment Modes */}
-  <div>
-   
-  </div>
+        <Route path="/" element={<Payment />}>
+        </Route>
+        <Route path="/Front" element={<Front/>}>
+</Route>
+      </Routes>
+    </BrowserRouter>
+      
+    </>
+  );
+};
 
-
-  {/* Invoice Details  */}
-  <div>
-
-  </div>
-
-  {/* Payment Options */}
-  <div>
-
-  </div>
-
-
-  {/* Document Upload */}
-  <div>
-
-  </div>
- {/* Save (Submit form) */}
- <div>
-
- </div>
-  </>
-  )
-}
-
-export default App
+export default App;
